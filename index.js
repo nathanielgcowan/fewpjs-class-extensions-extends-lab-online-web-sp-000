@@ -23,11 +23,12 @@ class Triangle extends Polygon {
 
   get isValid() {
     if (!Array.isArray(this.sides)) return;
-    if (this.count !== 3) return;
-    let side1 = this.sides[0]
-    let side2 = this.sides[1]
-    let side3 = this.sides[2]
-    return ((side1 + side2 > side3) && (side1 + side3 > side2) && (side2 + side3 > side1))
+      if (this.count !== 3) return;
+      let a = this.sides[0]
+      let b = this.sides[1]
+      let c = this.sides[2]
+      return ((a + b > c) && (b + C > a) && (c + a > b))
+    // the sum of the lengths of any two sides of a tiangle is greatert han the length of the thrid side. if you take the three sides of a trianald and add them in paris, the sum is greatino than (not equal to) the thrid side. If that is not true, then it is not possible to construct a trianld w ith the given side lengths.
   }
 }
 
