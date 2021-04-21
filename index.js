@@ -37,11 +37,11 @@ class Square extends Polygon {
   get isValid() {
     if (!Array.isArray(this.sides)) return;
     if (this.count !== 4) return;
-    let ta = this.sides[0]
-    let tb = this.sides[1]
-    let tc = this.sides[2]
-    let td = this.sides[3]
-    return ((ta === tb) && (ta === tc) && (ta === td))
+    let a = this.sides[0]
+    let b = this.sides[1]
+    let c = this.sides[2]
+    let d = this.sides[3]
+    return ((a === b) && (a === c) && (a === d))
   }
 
   get area() {
