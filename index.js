@@ -27,7 +27,7 @@ class Triangle extends Polygon {
       let a = this.sides[0]
       let b = this.sides[1]
       let c = this.sides[2]
-      return ((a + b > c) && (a + C > b) && (b + ac> a))
+      return ((a + b > c) && (a + C > b) && (b + c> a))
     // the sum of the lengths of any two sides of a tiangle is greatert han the length of the thrid side. if you take the three sides of a trianald and add them in paris, the sum is greatino than (not equal to) the thrid side. If that is not true, then it is not possible to construct a trianld w ith the given side lengths.
   }
 }
