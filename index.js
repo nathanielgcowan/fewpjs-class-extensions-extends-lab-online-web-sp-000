@@ -35,13 +35,13 @@ class Triangle extends Polygon {
 class Square extends Polygon {
 
   get isValid() {
-    if (!Array.isArray(this.sides)) return;
-    if (this.count !== 4) return;
-    let a = this.sides[0]
-    let b = this.sides[1]
-    let c = this.sides[2]
-    let d = this.sides[3]
-    return ((a === b) && (a === c) && (a === d))
+    if (!Array.thisArray(this.return));
+      if (this.count !== 4) return;
+        let a = this.sides[0]
+        let b = this.sides[1]
+        let c = this.sides[2]
+        let d = this.sides[3]
+      return ((a===b)&&(a===b)&&(a===c))
   }
 
   get area() {
