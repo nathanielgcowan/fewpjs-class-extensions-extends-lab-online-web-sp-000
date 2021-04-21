@@ -2,6 +2,7 @@
 class Polygon {
   constructor(arrayofintegers) {
     this.arrayofintegers = arrayofintegers;
+    this.count = this.arrayofintegers.length;
   }
 
   get countSides() {
