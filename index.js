@@ -20,7 +20,7 @@ class Polygon {
 }
 
 class Triangle extends Polygon {
-  
+
   get isValid() {
     if (!Array.isArray(this.arrayofintegers)) return;
       if (this.count !== 3) return;
