@@ -46,6 +46,6 @@ class Square extends Polygon {
   get area() {
     if (!Array.isArray(this.sides)) return;
       if (this.count !== 4) return;
-        return a * b
+        return this.a * this.b
   }
 }
