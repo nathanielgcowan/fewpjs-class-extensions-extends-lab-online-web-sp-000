@@ -41,7 +41,7 @@ class Square extends Polygon {
         let b = this.sides[1]
         let c = this.sides[2]
         let d = this.sides[3]
-      return ((a===b)&&(a===b)&&(a===c))
+      return ((a === b) && (a === c) && (a === d))
   }
 
   get area() {
