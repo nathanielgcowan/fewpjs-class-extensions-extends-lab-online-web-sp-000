@@ -35,7 +35,7 @@ class Triangle extends Polygon {
 class Square extends Polygon {
 
   get isValid() {
-    if (!Array.thisArray(this.return));
+    if (!Array.thisArray(this.sides));
       if (this.count !== 4) return;
         let a = this.sides[0]
         let b = this.sides[1]
