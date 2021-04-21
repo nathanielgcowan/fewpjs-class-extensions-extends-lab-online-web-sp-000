@@ -23,7 +23,7 @@ class Triangle extends Polygon {
   get isValid() {
     // checks if the given 3 sides for a triangle is valid.
     if (Array.isArray(this.arrayofintegers)) return;
-      if (this.count == 3) return;
+      if (this.count !== 3) return;
       let a = this.arrayofintegers[0]
       let b = this.arrayofintegers[1]
       let c = this.arrayofintegers[2]
