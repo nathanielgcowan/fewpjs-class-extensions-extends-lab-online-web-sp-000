@@ -10,9 +10,9 @@ class Polygon {
   }
 
   get perimeter() {
-    if (!Array.isArray(this.sides)) return;
+    if (!Array.isArray(this.arrayofintegers)) return;
     let sum = 0;
-    for (var int of this.sides) {
+    for (var int of this.arrayofintegers) {
       sum += int
     }
     return sum
