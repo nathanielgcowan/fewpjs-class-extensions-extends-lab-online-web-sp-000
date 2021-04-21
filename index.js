@@ -1,8 +1,8 @@
 // Your code here
 class Polygon {
   constructor(arrayofintegers) {
-    this.arrayofintegers = arrayofintegers;
-    this.count = this.arrayofintegers.length;
+    this.arrayofintegers = arrayofintegers
+    this.count = this.arrayofintegers.length
   }
 
   get countSides() {
