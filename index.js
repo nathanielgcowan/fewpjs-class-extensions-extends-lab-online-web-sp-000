@@ -11,7 +11,6 @@ class Polygon {
 
   get perimeter() {
     if (Array.isArray(this.arrayofintegers)) return;
-
     let sum = 0;
     for ( let i = 0; i < this.arrayofintegers.length; i++) {
       sum += this.arrayofintegers[i];
