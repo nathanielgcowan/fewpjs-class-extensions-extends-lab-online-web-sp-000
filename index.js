@@ -21,6 +21,7 @@ class Triangle extends Polygon {
   get isValid() {
     // checks if the given 3 sides for a triangle is valid.
     if (Array.isArray) return;
+      if this.count == 3 return;
       let a = this.arrayofintegers[0]
       let b = this.arrayofintegers[1]
       let c = this.arrayofintegers[2]
@@ -37,6 +38,5 @@ class Square extends Polygon {
       let b = this.arrayofintegers[1]
       let c = this.arrayofintegers[2]
       let d = this.arrayofintegers[3]
-      return (a * b)
   }
 }
