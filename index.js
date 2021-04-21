@@ -30,4 +30,3 @@ class Triangle extends Polygon {
   }
 }
 
-}
