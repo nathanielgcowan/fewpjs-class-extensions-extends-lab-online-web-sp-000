@@ -31,5 +31,12 @@ class Triangle extends Polygon {
 }
 
 class Square extends Polygon {
-
+  get inValid() {
+    if (Array.isArray) return;
+      let a = this.arrayofintegers[0]
+      let b = this.arrayofintegers[1]
+      let c = this.arrayofintegers[2]
+      let d = this.arrayofintegers[3]
+      return (a * b)
+  }
 }
