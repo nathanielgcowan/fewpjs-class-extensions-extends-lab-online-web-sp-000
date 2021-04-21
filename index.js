@@ -1,19 +1,19 @@
 // Your code here
 class Polygon {
-  constructor(arrayofintegers) {
-    this.arrayofintegers = arrayofintegers
-    this.count = this.arrayofintegers.length
+  constructor(sides) {
+    this.sides = sides
+    this.count = this.sides.length
   }
 
   get countSides() {
-    return this.arrayofintegers.length;
+    return this.sides.length;
   }
 
   get perimeter() {
-    if (!Array.isArray(this.arrayofintegers)) return;
+    if (!Array.isArray(this.sides)) return;
     let sum = 0;
-    for ( let i = 0; i < this.arrayofintegers.length; i++) {
-      sum += this.arrayofintegers[i];
+    for ( let i = 0; i < this.sides.length; i++) {
+      sum += this.sides[i];
     }
     return sum;
   }
@@ -22,11 +22,11 @@ class Polygon {
 class Triangle extends Polygon {
 
   get isValid() {
-    if (!Array.isArray(this.arrayofintegers)) return;
+    if (!Array.isArray(this.sides)) return;
       if (this.count !== 3) return;
-      let a = this.arrayofintegers[0]
-      let b = this.arrayofintegers[1]
-      let c = this.arrayofintegers[2]
+      let a = this.sides[0]
+      let b = this.sides[1]
+      let c = this.sides[2]
       return ((a + b > c) && (b + C > a) && (c + a > b))
     // the sum of the lengths of any two sides of a tiangle is greatert han the length of the thrid side. if you take the three sides of a trianald and add them in paris, the sum is greatino than (not equal to) the thrid side. If that is not true, then it is not possible to construct a trianld w ith the given side lengths.
   }
