@@ -34,7 +34,7 @@ class Triangle extends Polygon {
 
 class Square extends Polygon {
   get inValid() {
-    if (Array.isArray) return;
+    if (!Array.isArray) return;
       let a = this.sides[0]
       let b = this.sides[1]
       let c = this.sides[2]
@@ -43,6 +43,8 @@ class Square extends Polygon {
   }
 
   get area() {
+    if (!Array.isArray) return;
+      if side.count !== 4
     return a * b;
   }
 }
